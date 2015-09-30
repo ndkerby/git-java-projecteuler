@@ -15,14 +15,15 @@
 //package math;
 import math.MATH;
 import java.util.*;
+import java.math.BigInteger;
 //import MATH;
 
 public class LargestPrimeFactor  {
 
-    public static final int NUMBER = 13195;
+    public static final Long NUMBER = 600851475143L;
     public static void main(String[] args) {
-        Integer[] factors = math.MATH.factors(NUMBER);
-        int largest_prime = 1;
+        Long[] factors = math.MATH.factors(NUMBER);
+        long largest_prime = 1;
         for(int index = 0; index < factors.length; index++){
             boolean isPrime = math.MATH.isPrime(factors[index]);
             if(isPrime){

@@ -19,10 +19,10 @@ public class LargestPrimeFactor  {
 
     public static final Long NUMBER = 600851475143L;
     public static void main(String[] args) {
-        Long[] factors = math.MATH.factors(NUMBER);
+        Long[] factors = MATH.factors(NUMBER);
         long largest_prime = 1;
         for(int index = 0; index < factors.length; index++){
-            boolean isPrime = math.MATH.isPrime(factors[index]);
+            boolean isPrime = MATH.isPrime(factors[index]);
             if(isPrime){
                 if (factors[index] > largest_prime) {
                     largest_prime = factors[index];

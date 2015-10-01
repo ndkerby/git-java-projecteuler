@@ -31,7 +31,7 @@ public class EvenFibonacciNumbers  {
         int sum = 0;
         
         while( currentNumber < MAX) {
-            int newNumber = math.MATH.fibonacci(currentNumber, previousNumber);
+            int newNumber = MATH.fibonacci(currentNumber, previousNumber);
             previousNumber = currentNumber;
             currentNumber = newNumber;
             

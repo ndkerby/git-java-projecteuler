@@ -99,4 +99,21 @@ public class MATH  {
         return isPalindrome;
     }
 
+    public static int sumOfSquares(int start, int end){
+        int sum = 0;
+        for(int i = start; i <= end; i++){
+            sum += Math.pow(i,2);
+        }
+        return sum;
+    }
+
+    public static int squareOfSum(int start, int end){
+        int sum = 0;
+        for(int i = start; i <= end; i++){
+            sum += i;
+        }
+        int square = (int) Math.pow(sum,2);
+        return square;
+    }
+
 }

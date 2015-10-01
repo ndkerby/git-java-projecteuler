@@ -6,17 +6,14 @@
 *    What is the largest prime factor of the number 600851475143 ?
 *
 * ANSWER: 
-*    The largest prime factor is: 
+*    The largest prime factor is: 906609
 *
 * @author
 * Natalie Kerby :: ndkerby@gmail.com
 */
 
-//package math;
 import math.MATH;
 import java.util.*;
-import java.math.BigInteger;
-//import MATH;
 
 public class LargestPrimeFactor  {
 

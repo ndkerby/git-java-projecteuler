@@ -12,28 +12,19 @@ public class MATH  {
     
     public static int fibonacci(int currentFibonacci, int previousFibonacci) {
         int nextFibonacci = currentFibonacci + previousFibonacci;  
-        //System.out.println(nextFibonacci); 
         return nextFibonacci;
     } 
-    
+
     public static Integer[] factors(int number) {
-        ArrayList<Integer> factors = new ArrayList<Integer>();
-        double square = isPerfectSquare(number);
-        
-        for(int index = 1; index <= square; index++){
-            if (number%index == 0){
-                factors.add(index);
-                if ( (number/index) != index){ 
-                    factors.add(number/index);
-                }
-            }
+        Long longNumber = new Long(number);
+
+        Long[] factors = factors(longNumber);
+        Integer[] factors_list = new Integer[factors.length];
+        for( int i=0; i< factors.length; i++){
+            factors_list[i] = factors[i].intValue();
         }
-        Integer[] factors_list = new Integer[factors.size()];
-        factors_list = factors.toArray(new Integer[0]);
-        //System.out.println(Arrays.toString(factors_list)); 
-        //System.out.println(factors); 
         return factors_list;
-    } 
+    }
 
     public static Long[] factors(Long number) {
         ArrayList<Long> factors = new ArrayList<Long>();
@@ -49,8 +40,6 @@ public class MATH  {
         }
         Long[] factors_list = new Long[factors.size()];
         factors_list = factors.toArray(new Long[0]);
-        //System.out.println(Arrays.toString(factors_list)); 
-        //System.out.println(factors); 
         return factors_list;
     } 
 
@@ -115,5 +104,4 @@ public class MATH  {
         int square = (int) Math.pow(sum,2);
         return square;
     }
-
 }

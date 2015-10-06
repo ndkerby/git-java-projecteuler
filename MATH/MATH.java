@@ -104,4 +104,12 @@ public class MATH  {
         int square = (int) Math.pow(sum,2);
         return square;
     }
+
+    public static boolean isPythagorean(int a, int b, int c){
+        if(Math.pow(a,2) + Math.pow(b,2) == Math.pow(c,2)){
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
